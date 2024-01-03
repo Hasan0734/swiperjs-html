@@ -41,31 +41,36 @@
 const swiper = new Swiper('.swiper', {
     slidesPerView: 8.5,
     spaceBetween: 10,
+    freeMode: true,
     navigation: {
       nextEl: '#next',
       prevEl: '#prev',
     },
   
-      // Responsive breakpoints
-//   breakpoints: {
-//     // when window width is >= 320px
-//     320: {
-//       slidesPerView: 4,
+  breakpoints: {
+    320: {
+      slidesPerView: 3.5,
     
-//     },
-//     // when window width is >= 480px
-//     480: {
-//       slidesPerView: 4,
-    
-//     },
-//     // when window width is >= 640px
-//     640: {
-//       slidesPerView: 4,
-   
-//     },
-//     1100: {
-//         slidesPerView: 5.5,
+    },
 
-//     }
-//   }
+    640: {
+      slidesPerView: 4.5,
+   
+    },
+    830: {
+        slidesPerView: 6.5,
+    },
+    1160: {
+        slidesPerView: 7.5,
+    },
+    1332: {
+        slidesPerView: 8.5,
+    },
+    1500: {
+        slidesPerView: 9.5,
+    },
+    1600: {
+        slidesPerView: 10.5,
+    }
+  }
   });
